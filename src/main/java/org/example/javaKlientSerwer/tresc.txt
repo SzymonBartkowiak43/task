@@ -1,0 +1,30 @@
+W relacyjnej bazie danych znajdują się trzy tabele:
+
+users //tabela z użytkownikami
+- id bigint PRIMARY KEY NOT NULL
+- nick text NOT NULL
+- login text NOT NULL
+- password text NOT NULL
+- ... // pozostałe dane o użytkowniku
+- insert_time timestamp NOT NULL DEFAULT now()
+
+vehicles //tabela z pojazdami użytkowników
+- id bigint PRIMARY KEY NOT NULL
+- login text NOT NULL REFERENCES(users.login)
+- brand text NOT NULL // marka pojazdu
+- model text NOT NULL // model pojazdu
+- ... // pozostałe dane o pojeździe
+- insert_time timestamp NOT NULL
+
+insurance_offers //tabela zawierająca oferty ubezpieczenia OC dla danego pojazdu
+- id bigint PRIMARY KEY NOT NULL
+- vehicle_id bigint NOT NULL REFERENCES (vehicles.id)
+- insurer text NOT NULL //nazwa towarzystwa ubezpieczeniowego z którego pochodzi dana oferta
+- price float NOT NULL
+- ... // pozostałe dane o ofercie ubezpieczeniowej
+- insert_time timestamp NOT NULL
+Napisz w języku Java prosty serwer TCP/IP który otworzy Socket i zacznie nasłuchiwać przychodzących danych na wybranym porcie. Po odebraniu przychodzącego komunikatu (klient powinien wysłać id użytkownika czyli daną znajdującą się w kolumnie id tabeli "users") serwer pobierze wszystkie pojazdy i oferty ubezpieczeniowe dla danego użytkownika oraz odeśle je w odpowiedzi. Do odczytu danych z bazy użyj czystego JDBC. Użyć PostgreSQL lub innej relacyjnej bazy. Klient po odebraniu danych powinien je wypisać na konsoli w formie czytelnej dla osoby obsługującej. W ramach wykonanego zadania do podesłania SQL z utworzonej bazy, kod serwera, oraz kod klienta. Dodatkowe pytania:
+* Co można poprawić w strukturze bazy?
+* Jak po stronie serwera można zweryfikować czy nadawca komunikatu rzeczywiście jest właścicielem danego konta w tabeli "users"?
+* Czy zaproponowane przez Ciebie rozwiązanie można zoptymalizować, aby pozwalało obsłużyć jednocześnie komunikaty od kilku klientów?
+Pozdrawiam

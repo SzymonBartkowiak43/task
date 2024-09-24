@@ -1,0 +1,7 @@
+1) algorytm na stringu tzn na wejściu jest np: wwwegwwh a na wyjściu ma być 3w1e1g2w1h
+
+2) podać liczbę minut dla stringa podanego następująco 11:00am-8:00pm.
+wynik: 540 minut
+
+3) algorytm podaje int[] i założenie jest takie że są to ceny akcji w kolejnych data h.
+Należy wyliczyć największy zysk na akcjach dla tego ciągu

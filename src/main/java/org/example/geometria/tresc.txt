@@ -1,0 +1,6 @@
+Wyobraź sobie, że w pewnym miejscu przestrzeni masz wybrany punkt główny.
+Poza tym w przestrzeni jest mnóstwo innych punktów.
+
+Twoim zadaniem jest napisanie metody, która znajdzie najbliższy punkt w przestrzeni względem punktu głównego.
+
+Załóżmy, że mówimy o przestrzeni dwuwymiarowej.
