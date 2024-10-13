@@ -11,7 +11,15 @@ public class Main {
         }
         mapa[2][2] = 'X';
 
-
-//        System.out.println("Droga do skarbu: " + Treasure.findTreasure(mapa,0,0,size));
+       // System.out.println(findTreasure(mapa,0,0,""));
     }
+
+//    public static String findTreasure(char[][] map,int x, int y) {
+//        if(map[x][y] == 'X') {
+//            return path + "X"+ x + "||" + y + "X" ;
+//        }
+//
+//        return findTreasure(map, x+1, y, path) + findTreasure(map,x,y+1,path);
+//
+//    }
 }

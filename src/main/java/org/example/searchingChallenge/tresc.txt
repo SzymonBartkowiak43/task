@@ -3,13 +3,16 @@ Have the function SearchingChallenge(str) take the str parameter being passed an
 
 For example: "Today, is the greatest day ever!" should return greatest because it has 2 e's (and 2 t's) and it comes before ever which also has 2 e's. If there are no words with repeating letters return -1. Words will be separated by spaces.
 
-Once your function is working, take the final output string and remove any characters (case-insensitive) from it that appear in your ChallengeToken. If the new final string is empty, return the string EMPTY.
+Once your function is working, take the final output string and remove any characters (case-insensitive) from it that appear in your ChallengeToken.
+If the new final string is empty, return the string EMPTY.
 
 Your ChallengeToken: 69svmglwc7
 Examples
+
 Input: "Hello apple pie"
 Output: Hello
 Final Output: Heo
+
 Input: "No words"
 Output: -1
 Final Output: -1

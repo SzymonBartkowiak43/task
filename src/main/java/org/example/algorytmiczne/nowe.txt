@@ -1,0 +1,8 @@
+Napisz funkcję, która przyjmuje jako argument tablicę liczb całkowitych
+i zwraca największą sumę nieprzylegających liczb.
+Oznacza to, że nie możesz wybierać dwóch liczb, które znajdują się obok siebie w tablicy.
+
+Przykład:
+
+int[] nums = {2, 4, 6, 2, 5};
+// Oczekiwany wynik: 13 (wybierz liczby 2, 6, 5)
