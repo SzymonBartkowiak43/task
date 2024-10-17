@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Stworzyłem dzisiaj z 30 tetow poniewaz przygotowuje sie do projektu opartego na TDD");
+
         Scanner scanner = new Scanner(System.in);
         double payment = scanner.nextDouble();
 
